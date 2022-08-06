@@ -1,0 +1,1 @@
+document.body += "Hello World";
