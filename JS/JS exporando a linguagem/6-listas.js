@@ -15,3 +15,7 @@ console.log("Destinos possívei:");
 // console.log(salvador, saoPaulo, rioDeJaneiro);
 console.log(listaDeDestinos);
 
+listaDeDestinos.splice(2,1);
+
+console.log(listaDeDestinos);
+console.log(listaDeDestinos[2],[0]);
