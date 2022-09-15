@@ -25,7 +25,7 @@ buttons.map( button => {
                 }
                 break;
 
-                           case '=':
+             case '=':
                 try{
                 display.innerText = eval(display.innerText); // usar com cuidado pois é uma abertura para ações maliciosas
                 break;
@@ -33,6 +33,7 @@ buttons.map( button => {
                 display.innerText = 'Error!';
             }
                 break;
+                
             default:
                 display.innerText += e.target.innerText;
         }

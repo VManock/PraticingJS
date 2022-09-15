@@ -87,8 +87,6 @@ buttons.map( button => {
                 break;
             // verificar se:
             // existe um número
-            //
-            // 
 
             default:
                 display.innerText += e.target.innerText;
