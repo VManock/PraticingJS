@@ -9,6 +9,20 @@ function checarUltimoDigito(ultimoDigito){
     return false;
 }
 
+function numeroSemVirgula(innerText){
+    var ultimoNumero = getUltimoNumero(innerText);
+    if(ultimoNumero.includes(',')){
+        return false;
+    }
+    return true;
+}
+
+function getUltimoNumero(innerText){
+    var inicioDoUltimoNumero = innerText.indexOf('+');
+    var ultimoNumero = innerText.slice(inicioDoUltimoNumero, innerText.lenght);
+    return ultimoNumero;
+}
+
 
 
 buttons.map( button => {
@@ -25,15 +39,55 @@ buttons.map( button => {
                 }
                 break;
 
-             case '=':
-                try{
-                display.innerText = eval(display.innerText); // usar com cuidado pois é uma abertura para ações maliciosas
+            case '+':
+                var ultimoDigito=display.innerText.slice(display.innerText.length - 1 , display.innerText.length)
+                if(checarUltimoDigito(ultimoDigito)){
+                    break;
+                }
+
+                display.innerText += e.target.innerText;
                 break;
-            } catch { 
-                display.innerText = 'Error!';
-            }
-                break;
+
+            case '-':
+                var ultimoDigito=display.innerText.slice(display.innerText.length - 1 , display.innerText.length)
+                if(checarUltimoDigito(ultimoDigito)){
+                    break;
+                }
                 
+                display.innerText += e.target.innerText;
+                break; 
+
+            case '*':
+                var ultimoDigito=display.innerText.slice(display.innerText.length - 1 , display.innerText.length)
+                if(checarUltimoDigito(ultimoDigito)){
+                    break;
+                }
+                
+                display.innerText += e.target.innerText;
+                break; 
+
+            case '/':
+                var ultimoDigito=display.innerText.slice(display.innerText.length - 1 , display.innerText.length)
+                if(checarUltimoDigito(ultimoDigito)){
+                    break;
+                }
+                
+                display.innerText += e.target.innerText;
+                break; 
+            
+            case ',':
+                var ultimoDigito=display.innerText.slice(display.innerText.length - 1 , display.innerText.length)
+                if(checarUltimoDigito(ultimoDigito)){
+                    break;
+                }
+            
+                if(numeroSemVirgula(display.innerText)){
+                    display.innerText += e.target.innerText;
+                }
+                break;
+            // verificar se:
+            // existe um número
+
             default:
                 display.innerText += e.target.innerText;
         }
