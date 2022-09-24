@@ -1,14 +1,14 @@
 .container {
-    max-width: 400px;
+    max-width: 350px;
     max-height: 70%;
     box-shadow: 5px 5px 5px 1px;
     margin: 5% auto;
     background-color: rgb(175, 175, 175);
 }
 
-.display {
+#display {
     text-align: right;
-    height: 100px;
+    height: 70px;
     line-height: 70px;
     padding: 16px 8px;
     font-size: 25px;
@@ -22,7 +22,7 @@
     color: #444;
 }
 
-#backspace, #enter {
+#backspace, #equal {
     width: 153px;
 }
 
@@ -34,6 +34,8 @@
     font-size: 75px;
     text-align: center;
     cursor: pointer;
+    transition: 0.5s ease-in-out;
+
     
 }
 
