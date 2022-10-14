@@ -50,3 +50,12 @@ https://www.alura.com.br/artigos/async-await-no-javascript-o-que-e-e-quando-usar
 O artigo “Async/await no JavaScript: o que é e quando usar a programação assíncrona?” pode te ajudar a entender ambos os casos e suas diferenças. -->
 
 Aula 05
+
+focusout é um evento, seu gatilho ocorre quando o usuário remove o foco de uma área;
+
+addEventListener(): permite chamar funções quando ocorre alguma interação do usuário em específico;
+
+Podemos alterar os valores utilizando a propriedade value;
+
+Ao usar o innerHTML conseguimos alterar o conteúdo de uma div ou outro parametro do HTML atráves do JS;
+
