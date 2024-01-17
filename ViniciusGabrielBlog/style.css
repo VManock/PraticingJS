@@ -1,0 +1,128 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background: rgb(131,58,180);
+    background: linear-gradient(0deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    font-size: 24px;        
+    
+}
+
+p, h2,h3 {
+    margin: 6px;
+    
+}
+  
+
+.container{
+    border-radius: 30px;
+    border: 1px;
+    box-shadow: -4px 7px 50px -5px rgba(0,0,0,0.42);    
+    background-color: rgb(215, 230, 80);
+    margin: 30px;
+    padding: 10px 35px;
+    flex-direction: column;
+    display: flex;
+}
+
+#container_foto_de_perfil {
+    filter:drop-shadow(2px 5px 50px #0000006b);
+
+}
+
+.foto_de_perfil {
+    mask-image: radial-gradient(circle, black 60%, rgba(0, 0, 0, 0) 50%);
+    height: 250px;
+}
+
+a, a:visited, a:link, a:hover, a:active {
+    color: black;
+    text-decoration: none;    
+    
+}
+
+.container_btn {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  margin: 10px 0px 5px 0px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  font-size: 20px;
+  border-radius: 6px;
+  border: none;
+  background: #6f3fcd;
+  box-shadow: 0px 0.5px 1px rgba(180, 58, 58, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+  color: #DFDEDF;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.btn:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 10px;
+
+}
+
+.btn:hover {
+    cursor:pointer;
+    background: #722efb;
+}
+
+
+#formulario {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    border-radius: 12px;
+    padding: 26px;
+  }
+  
+.caixa_de_input {
+    min-height: 26px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0px;
+    background-color: transparent;
+}
+
+input[type=text]{
+    width: 100%;
+    height: 100px;
+}
+  
+  
+label {
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+
+#linkedin, #instagram {
+    height: 45px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+#linkedin {
+    background-color: white;
+}
+
+#linkedin:hover, #instagram:hover {
+    box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.25);
+
+}
