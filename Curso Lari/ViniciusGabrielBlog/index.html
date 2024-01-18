@@ -4,50 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinicius Gabriel</title>
-    <link rel="stylesheet" src="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <img src="/source/pp.png" alt="Foto de perfil">
+    <div id="container_foto_de_perfil">
+        <img class="foto_de_perfil" src="/source/pp.png" alt="Foto de perfil">
     </div>
-    <div>
+    <div class="container">
         <h2>Vinicius Gabriel</h2>
         <p>23 anos</p>
         <p>Brasilia - DF</p>
         <p>(21) 4002-8922</p>
         <p>fale@viniciusgabriel.com</p>
     </div>
-    <div>
+    <div class="container">
         <h3>Habilidades</h3>
         <p>HTML</p>
         <p>CSS</p>
         <p>JavaScript</p>
         <p>Java</p>
     </div>
-    <div>
+    <div class="container">
         <h3>Experiências</h3>
         <p>Desenvolvedor Web freelancer</br> em IWWEB Agência Digital</p>
         <p>Vendedor SaaS</br> em Cortes Network</p>
         <p>Editor audiovisual freelancer</br> Editor audiovisual</p>
     </div>
-    <div>
+    <div class="container">
         <h3>Idiomas</h3>
         <p>pt-BR Português</br> Nativo</p>
         <p>en-US English</br> Profissional</p>
     </div>
-    <div>
-        <h3>Portfólio</h3>        
+    <div id="portfolio" class="container">
+        <a href="https://viniciusgabriel.com/#portfolio" target="_blank">
+            <h3 id="portfolio">Portfólio</h3>    
+        </a>
+        <div class="container_btn">
+            <a href="https://viniciusgabriel.com/category/desenvolvimento-web/" target="_blank">
+                <button class="btn">Desenvolvimento Web →</button>
+            </a>    
+            <a href="https://viniciusgabriel.com/category/edicao/edicao-de-video/" target="_blank">
+                <button class="btn">Edição de vídeo →</button>
+            </a> 
+        </div>  
     </div>
-    <div>
+    <div class="container">
         <h3>Contato</h3>
-        <form>
-            
-        </form>
+        <form
+        id="formulario"
+        name="meuFormulario"
+        onsubmit=""
+        method="get"
+      >
+        <label for="email">Email</label>
+        <input type="email" id="email" class="caixa_de_input" />
+        <label for="nome">Nome</label>
+        <input type="name" id="nome" class="caixa_de_input" />
+        <label for="mensagem">Mensagem</label>
+        <input type="text" id="mensagem"  class="caixa_de_input" class="input_mensagem"/>
+        <div class="container_btn">
+          <input type="submit" value="Enviar" class="btn" />
+        </div>
+      </form>
     </div>
 
     <div id="redes">
-        <img src="/source/instagram.png" id="instagram">
-        <img src="/source/linkedin.png" id="linkedin">
+        <a href="https://www.instagram.com/deviniciusg" target="_blank">
+            <img src="/source/instagram.png" id="instagram">
+        </a>
+        <a  href="https://www.linkedin.com/in/vinicius-gabriel-de-moura-b90bb8157/" target="_blank">
+            <img src="/source/linkedin.png" id="linkedin">
+        </a>
 
     </div>
 </body>
