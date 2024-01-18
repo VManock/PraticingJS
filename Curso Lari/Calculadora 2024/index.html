@@ -7,23 +7,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="calculadora">
-        <div id="display" class="container">0</div>
-        <div id="corpo">
-            <div>
-                <button class="botao_numerico">7</button class="botao_numerico"><button class="botao_numerico">8</button><button class="botao_numerico">9</button><button class="botao_operacional">/</button>
+    <div id="container">
+        <div id="calculadora">      
+            <div id="screen">
+                <div id="memoria"></div>
+                <div id="operador"></div>
+                <div id="display">0</div>
+            </div>                    
+                <button id="btn7" class="botao_numerico">7</button>
+                <button id="btn8" class="botao_numerico">8</button>
+                <button id="btn9" class="botao_numerico">9</button>
+                <button id="btn/" class="botao_operacional">/</button>
+                <button id="btn4" class="botao_numerico">4</button>
+                <button id="btn5" class="botao_numerico">5</button>
+                <button id="btn6" class="botao_numerico">6</button>
+                <button id="btn*" class="botao_operacional">*</button>
+                <button id="btn1" class="botao_numerico">1</button>
+                <button id="btn2" class="botao_numerico">2</button>
+                <button id="btn3" class="botao_numerico">3</button>
+                <button id="btn-" class="botao_operacional">-</button>
+                <button id="btnC" class="botao_numerico">C</button>
+                <button id="btn0" class="botao_numerico">0</button>
+                <button id="btn," class="botao_numerico">,</button>
+                <button id="btn=" class="botao_operacional">=</button>             
             </div>
-            <div>
-                <button class="botao_numerico">4</button><button class="botao_numerico">5</button><button class="botao_numerico">6</button><button class="botao_operacional">*</button>
-            </div>
-            <div>
-                <button class="botao_numerico">1</button><button class="botao_numerico">2</button><button class="botao_numerico">3</button><button class="botao_operacional">-</button>
-            </div> 
-            <div>
-                <button class="botao_numerico">C</button><button class="botao_numerico">0</button><button class="botao_numerico">,</button><button class="botao_operacional">=</button>
-            </div> 
-        </div>
-    </div>  
+        </div>  
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
