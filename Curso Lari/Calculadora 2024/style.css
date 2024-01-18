@@ -20,11 +20,12 @@ body{
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 5px;
   grid-row-gap: 5px;
-  border: 1.5px solid #ffffff;
+  border: 1.5px solid black;
+  background-color: white;
   border-radius: 0.25em;
   max-width: 350px;
   margin: 0;
-  padding: 3px;
+  padding: 5px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -32,7 +33,11 @@ body{
 
 #screen {
   grid-area: 1 / 1 / 2 / 5;
-  background-color: #FFFFFF;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
   display: flex;
   justify-content: end;
   align-items: center;
@@ -58,7 +63,7 @@ body{
   color: rgba(0, 0, 0, 0.85);
   cursor: pointer;
   display: inline-flex;
-  font-size: 16px;
+  font-size: 18px;
   padding: calc(.875rem - 1px) calc(1.5rem - 1px);
   margin: 1px;
   text-decoration: none;
@@ -72,13 +77,12 @@ body{
 }
 
 .botao_numerico:hover,
-.botao_numerico:focus,
-.botao_operacional:hover,
-.botao_operacional:focus {
+.botao_numerico:focus
+{
   border-color: rgba(0, 0, 0, 0.15);
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
   color: rgba(0, 0, 0, 0.65);
-  background-color: rgb(242, 242, 242);
+  background-color: rgb(235, 235, 235);
 }
 
 .botao_numerico:hover
@@ -96,5 +100,11 @@ body{
 }
 
 
+.botao_operacional {
+  background-color: rgb(215, 215, 215);
+}
 
-
+.botao_operacional:hover,
+.botao_operacional:focus {
+  background-color: rgb(185, 185, 185);
+}
