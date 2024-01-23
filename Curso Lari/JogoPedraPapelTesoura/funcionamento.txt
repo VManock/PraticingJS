@@ -1,0 +1,25 @@
+#Regras do jogo
+
+-- Pedra papel e tesoura tradicional
+-- Humano escolhe uma das 3 opçoes
+-- Maquina aleatoriamente escolhe uma das 3 opçoes
+-- Comparar as duas escolhas para ver o resultado
+
+#Possiveis resultados para o jogador
+1 - Ganhar;
+2 - Empatar;
+3 - Perder;
+
+Uma mensagem será exibida em cada caso.
+
+
+
+Quando uma opçao for escolhida, o seguinte processamento deverá ser feito
+
+salvar em uma variavel a escolha da pessoa 
+gerar com uma função de aleatoriedade (o javascript tem isso, pesquisem) um numero entre 1 e 3 (podendo entao ser 1, 2 ou 3)
+dependendo do numero, uma escolha será atribuida ao oponente
+compare a escolha do player e do oponente
+remover o elemento oponente_escolhendo
+aumentar para 100% a opacidade da escolha do oponente
+exiba uma mensagem condizente com o resultado (vitoria, empate ou derrota, mas bota uma mensagem legalzinha)
