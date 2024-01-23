@@ -3,7 +3,10 @@ function escolher(opcao) {
 
     console.log(opcao) 
     console.log(opcao_oponente)
+    
+    document.getElementById("oponente_escolhendo").setAttribute("style","opacity:0;");
 
+    
     if (opcao == "pedra" && opcao_oponente == 0){
         return console.log("Empate!");
     } else if (opcao == "pedra" && opcao_oponente == 1){
@@ -28,7 +31,8 @@ function escolher(opcao) {
         console.log("Erro!");
     }
 
-
     
-}
 
+
+
+}
