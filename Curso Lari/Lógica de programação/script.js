@@ -11,7 +11,9 @@ function selecionaNovoExercicio() {
         selecionaNovoExercicio()
     } 
     
-    else if (numeralExercicio == 2) {}
+    else if (numeralExercicio == 2) { 
+        var numeralExercicio = parseInt(prompt("Você selecionou o exercício 2, insira um número por favor."))
+    }
     else if (numeralExercicio == 3) {}
     else if (numeralExercicio == 4) {}
     else if (numeralExercicio == 5) {}
