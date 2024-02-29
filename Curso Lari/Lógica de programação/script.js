@@ -37,6 +37,7 @@ function exercicio1() {
     var c = parseInt(prompt("Obrigado, agora insira o valor de 'c'"))
     
     comparaABC(a, b, c)
+    alert("Tudo certo.")
 }
 
 function selecionaNovoExercicio() {
